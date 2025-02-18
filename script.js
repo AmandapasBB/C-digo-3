@@ -11,6 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("pagina-periodo");
 });
 
+function toggleMenu() {
+  let menu = document.querySelector(".menu-items");
+  menu.classList.toggle("active");
+}
+
+let slideIndex = 0;
+        function mudarSlide(n) {
+            let slides = document.querySelectorAll(".slide");
+            slideIndex += n;
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+            let carrossel = document.querySelector(".carrossel");
+            carrossel.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+        
 function proximaPagina() {
   let paginas = [
     "periodo",
