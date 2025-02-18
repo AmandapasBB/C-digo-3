@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filmes de Terror</title>
+    <title>Haunted</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
@@ -15,13 +15,31 @@
     />
   </head>
   <body class="tela-inicial">
-    >
-    <img src="images/Logo.png" alt="Logo" class="imagem-topo" />
-    <div class="container">
-      <h1 class="titulo-terror">Qual o seu filme de terror favorito?</h1>
-      <h1 class="titulo-terror">Qual o seu filme de terror favorito?</h1>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Dicionário</a></li>
+          <li><a href="#">Curiosidades</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid banner-container">
+    </div>
+    
+    <div class="container flex-container" style="margin-top: 40px;">
+      <div class="content-box">
+        <button class="botao-comecar" onclick="proximaPagina()">Começar</button>
+      </div>
+    </div>
+    <div class="container-fluid titulo-container">
+      <div class="content-box">
+        <h1 class="titulo-terror">Qual o seu filme de terror favorito?</h1>
+    </div>
+    <div>
       <button class="botao-comecar" onclick="proximaPagina()">Começar</button>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
