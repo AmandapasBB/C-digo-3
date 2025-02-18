@@ -6,7 +6,7 @@ body {
 }
 
 .tela-inicial {
-  background-image: url("images/fundo5.jpg");
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -38,14 +38,12 @@ body {
 }
 
 .titulo-terror {
-  font-family: "Creepster", cursive;
-  font-size: 30px;
-  color: #100f0f;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 4px 4px 10px rgba(228, 213, 213, 0.8);
+  width: 100%;
+  padding: 100px 0; /* Espaçamento superior e inferior */
+  text-align: center; /* Centraliza o título */
+  background: url('images/ghostface.jpg') center/cover no-repeat; /* Fundo opcional para destaque */
+  color: white; 
+
 }
 
 .botao-comecar {
@@ -217,4 +215,47 @@ button:hover {
   .pagina-periodo p {
     font-size: 16px;
   }
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  display: inline;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.banner-container {
+  position: absolute; /* Define a posição baseada no topo */
+  top: 80px; /* Ajuste esse valor conforme necessário */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  width: 70%; /* Defina um tamanho menor para o banner */
+  max-width: 900px; /* Define um limite de tamanho */
+  height: 200px;
+  background: url('images/Logo.png') center/cover no-repeat;
+  display: flex;
+}
+.container.flex-container {
+  margin-top: 50px; /* Afasta o conteúdo abaixo do banner */
 }
